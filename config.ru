@@ -31,8 +31,8 @@ class Download < Sinatra::Base
       event: 'Episode Download',
       properties: {
         token: MIXPANEL_TOKEN,
-        episode: slug,
-        type: type,
+        'Episode': slug,
+        'Type': type,
         time: Time.now.to_i,
         ip: request.ip
       }
